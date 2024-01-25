@@ -1,10 +1,10 @@
-package com.renchi.piplineTemplate;
+package com.renchi.pipelineTemplate;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class PiplineTemplateApplicationTests {
+class PipelineTemplateApplicationTests {
 
 	@Test
 	void contextLoads() {
