@@ -22,7 +22,7 @@ Before using this workflow, ensure you have the following:
    - Set up `DOCKER_HUB_USERNAME` and `DOCKERHUB_TOKEN` in your repository's secrets to securely store your Docker Hub credentials.
 
 2. **Workflow File**:
-   - The workflow is defined in `.github/workflows/docker_image.yml`. （https://github.com/RENCHILIU/SpringbootPipeline/blob/main/.github/workflows/docker_image.yml）
+   - The workflow is defined in `.github/workflows/docker_image.yml`.  [link](https://github.com/RENCHILIU/SpringbootPipeline/blob/main/.github/workflows/docker_image.yml)
    - Customize the workflow as per your project's needs, especially the `context`, `file`, and `tags` fields under the `Build and Push` job.
 
 3. **Dockerfile**:
@@ -33,8 +33,12 @@ Before using this workflow, ensure you have the following:
 - **Manual Trigger**: You can also trigger the workflow manually from the GitHub Actions tab in your repository.
 
 
-ref:
+# Reference
+
 https://github.com/actions/checkout
+
 https://github.com/docker/setup-buildx-action
+
 https://github.com/docker/login-action
+
 https://github.com/docker/build-push-action
