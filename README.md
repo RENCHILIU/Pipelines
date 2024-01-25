@@ -42,3 +42,7 @@ https://github.com/docker/setup-buildx-action
 https://github.com/docker/login-action
 
 https://github.com/docker/build-push-action
+
+# Output
+
+Docker image will be pushed to https://hub.docker.com/r/renchi/java_pipeline
