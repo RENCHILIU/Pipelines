@@ -29,4 +29,5 @@ jobs:
         file: ./Dockerfile
         push: true
         tags: renchi/java_pipeline:latest  
+        platforms: linux/amd64,linux/arm64
 
