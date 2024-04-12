@@ -20,10 +20,14 @@ Before using this workflow, ensure you have the following:
 ## Setup and Configuration
 1. **GitHub Secrets**: 
    - Set up `DOCKER_HUB_USERNAME` and `DOCKERHUB_TOKEN` in your repository's secrets to securely store your Docker Hub credentials.
+     <img width="1184" alt="Screenshot 2024-04-11 at 9 46 23 PM" src="https://github.com/RENCHILIU/SpringbootPipeline/assets/21353882/a6ec43ce-f646-42d3-9534-2d0869556329">
+
+
 
 2. **Workflow File**:
    - The workflow is defined in `.github/workflows/docker_image.yml`.  [link](https://github.com/RENCHILIU/SpringbootPipeline/blob/main/.github/workflows/docker_image.yml)
    - Customize the workflow as per your project's needs, especially the `context`, `file`, and `tags` fields under the `Build and Push` job.
+   - Change the name of the docker file 
 
 3. **Dockerfile**:
    - Ensure your project contains a Dockerfile at its root. This Dockerfile should be configured to build your Spring Boot application.
