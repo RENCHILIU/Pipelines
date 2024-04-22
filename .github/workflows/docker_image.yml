@@ -2,8 +2,13 @@ name: Build and Push Docker Image
 
 on:
   workflow_dispatch:
-  push:
-    branches: [ main ]  
+    inputs:
+      workFolder:
+        description: 'Working Folder'
+        required: true
+        default: 'Spring_jdk17_maven'  # preset path 
+  # push:
+    # branches: [ main ]  
 
 jobs:
   build-and-push:
@@ -25,8 +30,8 @@ jobs:
     - name: Build and Push
       uses: docker/build-push-action@v5
       with:
-        context: .
-        file: ./Dockerfile
+        context: ./${{ github.event.inputs.workFolder }}
+        file: ./${{ github.event.inputs.workFolder }}/Dockerfile
         push: true
         tags: renchi/java_pipeline:latest  
         platforms: linux/amd64,linux/arm64
