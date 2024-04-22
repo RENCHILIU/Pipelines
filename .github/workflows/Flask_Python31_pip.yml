@@ -1,4 +1,4 @@
-name: Build&Push DockerImage for Flask_Python31_pip
+name: Flask_Python31_pip DockerImage Build and Push
 
 on:
   workflow_dispatch:
