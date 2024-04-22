@@ -1,4 +1,4 @@
-name: Build and Push Docker Image
+name: Build&Push DockerImage for Spring_jdk17_maven
 
 on:
   workflow_dispatch:
